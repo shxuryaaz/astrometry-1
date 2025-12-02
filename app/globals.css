@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans), "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #070410;
+  min-height: 100vh;
+}
+
+.glass-panel {
+  backdrop-filter: blur(40px);
+  background: rgba(19, 14, 35, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
