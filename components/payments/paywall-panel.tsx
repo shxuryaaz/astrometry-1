@@ -46,10 +46,10 @@ export const PaywallPanel = () => {
   const unlockPaid = useAppStore((state) => state.unlockPaid);
   const [isLoading, setLoading] = useState(false);
 
-  const handlePayment = async () => {
+    const handlePayment = async () => {
     setLoading(true);
     const loaded = await loadRazorpay();
-    if (!loaded) {
+    if (!loaded || !window.Razorpay) {
       setLoading(false);
       return;
     }
