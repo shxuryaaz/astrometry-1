@@ -102,9 +102,9 @@ export const getPlanetSnippets = async (
 
   const matchedChunks = findChunksForPlanet(
     planet.planet,
+    allChunks,
     planet.sign,
     planet.house,
-    allChunks,
     2,
   );
 

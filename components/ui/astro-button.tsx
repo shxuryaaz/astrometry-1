@@ -10,6 +10,7 @@ type Props = {
   isLoading?: boolean;
   onClick?: () => void;
   type?: "button" | "submit" | "reset";
+  disabled?: boolean;
 };
 
 export const AstroButton = ({

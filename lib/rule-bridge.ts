@@ -141,9 +141,9 @@ function isGarbageChunk(chunk: KnowledgeChunk): boolean {
 
 export function findChunksForPlanet(
   planet: string,
+  chunks: KnowledgeChunk[],
   sign?: string,
   house?: number,
-  chunks: KnowledgeChunk[],
   limit = 2,
 ): KnowledgeChunk[] {
   const planetLower = planet.toLowerCase();
